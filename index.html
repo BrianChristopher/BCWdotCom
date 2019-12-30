@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Brian Christopher Wood</title>
+    <title>Brian Christopher Wood | Home</title>
 
     <!-- This is bootstrap. -->
     <link
@@ -13,10 +13,173 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    <dir class="container">
-      <h1>Hello, world!</h1>
-    </dir>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Brian Christopher Wood</span>
+    </nav>
+   
+
+      <!-- <div class="row">
+        <div class="col-md">
+          <div class="card myPanel">
+            <div class="myPanelFront card" id="frontEducator">
+              <div class="card-body">
+                <h5 class="card-title">Educator</h5>
+              </div>
+            </div>
+            <div class="myPanelBack card">
+              <div class="card-body bg-dark">
+                Welcome to the flip-side of 1.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card myPanel">
+            <div class="myPanelFront card">
+              <div class="card-body">
+                <h5 class="card-title">Developer</h5>
+              </div>
+            </div>
+            <div class="myPanelBack card">
+              <div class="card-body">Welcome to the flip-side of 2.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card myPanel">
+            <div class="myPanelFront card">
+              <div class="card-body">
+                <h5 class="card-title">Musician</h5>
+              </div>
+            </div>
+            <div class="myPanelBack card">
+              <div class="card-body">Welcome to the flip-side of 3.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card myPanel">
+            <div class="myPanelFront card">
+              <div class="card-body"><h5 class="card-title">Brian</h5></div>
+            </div>
+            <div class="myPanelBack card">
+              <div class="card-body">Welcome to the flip-side of 4.</div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="container p-5">
+        <div
+          class="card text-white text-right bg-dark mb-3"
+          style="max-width: 18rem;"
+        >
+          <img
+            class="card-img-top"
+            src="assets/images/schoolBusBW.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Educator</h5>
+            <button
+              class="btn btn-dark"
+              data-toggle="modal"
+              data-target="#educatorModal"
+            >
+              Overview
+            </button>
+            <a href="educatorPage.html" class="btn btn-dark">Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Educator Modal -->
+    <div
+      class="modal fade"
+      id="educatorModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="educatorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="educatorModalLabel">Educator</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>Overview</h6>
+            <ul>
+              <li>
+                Certified to teach Business Education (6-12), Computer Science
+                (K-12), and Music (K-12) in Florida public schools.
+              </li>
+              <li>
+                Professional Certificate #988380 (expires June 30, 2024)
+              </li>
+              <li>
+                Three years as successful Elementary Music Specialist at largest
+                elementary school in district.
+              </li>
+              <li>
+                Special Area Lead Teacher
+              </li>
+              <li>
+                Mentor for Stetson University music education students.
+              </li>
+              <li>
+                Final classroom instructional evaluation rated as distinguished
+                / highly effective.
+              </li>
+            </ul>
+            <h6>Education</h6>
+            <ul>
+              <li>
+                Educator Preparation Institute (EPI) completed at Seminole State
+                College of Florida (2014)
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Jquery & bootstrap JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
