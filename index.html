@@ -16,82 +16,218 @@
     <link rel="stylesheet" href="assets/css/index.css" />
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1">Brian Christopher Wood</span>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+      <a class="navbar-brand mb-0 h1" href="index.html">Brian Christopher Wood</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="developerPage.html">Developer</a>
+          <a class="nav-item nav-link" href="educatorPage.html">Educator</a>
+          <a class="nav-item nav-link" href="musicianPage.html">Musician</a>
+          <a class="nav-item nav-link" href="brianPage.html">Brian</a>
+        </div>
+      </div>
+      <a class="btn btn-secondary" href="portfolio.html">Portfolio</a>
     </nav>
-   
+    <!--END OF NAVBAR-->
 
-      <!-- <div class="row">
-        <div class="col-md">
-          <div class="card myPanel">
-            <div class="myPanelFront card" id="frontEducator">
-              <div class="card-body">
-                <h5 class="card-title">Educator</h5>
-              </div>
-            </div>
-            <div class="myPanelBack card">
-              <div class="card-body bg-dark">
-                Welcome to the flip-side of 1.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card myPanel">
-            <div class="myPanelFront card">
-              <div class="card-body">
-                <h5 class="card-title">Developer</h5>
-              </div>
-            </div>
-            <div class="myPanelBack card">
-              <div class="card-body">Welcome to the flip-side of 2.</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="card myPanel">
-            <div class="myPanelFront card">
-              <div class="card-body">
-                <h5 class="card-title">Musician</h5>
-              </div>
-            </div>
-            <div class="myPanelBack card">
-              <div class="card-body">Welcome to the flip-side of 3.</div>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col">
+          <!-- DEVELOPER CARD -->
+          <div
+            class="card text-white text-right bg-dark mb-3 m-2"
+            style="max-width: 18rem;"
+          >
+            <img
+              class="card-img-top"
+              src="assets/images/codingBW.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Developer</h5>
+              <button
+                class="btn btn-dark"
+                data-toggle="modal"
+                data-target="#developerModal"
+              >
+                Overview
+              </button>
+              <a href="developerPage.html" class="btn btn-dark">Story</a>
             </div>
           </div>
         </div>
-        <div class="col-md">
-          <div class="card myPanel">
-            <div class="myPanelFront card">
-              <div class="card-body"><h5 class="card-title">Brian</h5></div>
-            </div>
-            <div class="myPanelBack card">
-              <div class="card-body">Welcome to the flip-side of 4.</div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+        <!-- End Column-->
 
-      <div class="container p-5">
-        <div
-          class="card text-white text-right bg-dark mb-3"
-          style="max-width: 18rem;"
-        >
-          <img
-            class="card-img-top"
-            src="assets/images/schoolBusBW.png"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Educator</h5>
+        <div class="col">
+          <!-- EDUCATOR CARD -->
+          <div
+            class="card text-white text-right bg-dark mb-3 m-2"
+            style="max-width: 18rem;"
+          >
+            <img
+              class="card-img-top"
+              src="assets/images/schoolBusBW.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Educator</h5>
+              <button
+                class="btn btn-dark"
+                data-toggle="modal"
+                data-target="#educatorModal"
+              >
+                Overview
+              </button>
+              <a href="educatorPage.html" class="btn btn-dark">Story</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Column-->
+
+        <div class="col">
+          <!-- MUSICAN CARD -->
+          <div
+            class="card text-white text-right bg-dark mb-3 m-2"
+            style="max-width: 18rem;"
+          >
+            <img
+              class="card-img-top"
+              src="assets/images/pianoBW.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Musician</h5>
+              <button
+                class="btn btn-dark"
+                data-toggle="modal"
+                data-target="#musicianModal"
+              >
+                Overview
+              </button>
+              <a href="musicianPage.html" class="btn btn-dark">Story</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Column-->
+
+        <div class="col">
+          <!-- BRIAN CARD -->
+          <div
+            class="card text-white text-right bg-dark mb-3 m-2"
+            style="max-width: 18rem;"
+          >
+            <img
+              class="card-img-top"
+              src="assets/images/bcwBW.png"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brian</h5>
+              <button
+                class="btn btn-dark"
+                data-toggle="modal"
+                data-target="#brianModal"
+              >
+                Overview
+              </button>
+              <a href="brianPage.html" class="btn btn-dark">Story</a>
+            </div>
+          </div>
+        </div>
+        <!-- End Column-->
+      </div>
+      <!-- end row  -->
+    </div>
+    <!-- End fluid container-->
+
+    <!-- Developer Modal -->
+    <div
+      class="modal fade"
+      id="developerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="developerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="developerModalLabel">Developer</h5>
             <button
-              class="btn btn-dark"
-              data-toggle="modal"
-              data-target="#educatorModal"
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
             >
-              Overview
+              <span aria-hidden="true">&times;</span>
             </button>
-            <a href="educatorPage.html" class="btn btn-dark">Story</a>
+          </div>
+          <div class="modal-body">
+            <h6>Overview</h6>
+            <ul>
+              <li>
+                Full stack web developer with a passion for creating simple,
+                elegant code, with JavaScript and React.
+              </li>
+              <li>
+                Skilled in MERN stack and learning new languages, libraries, and
+                frameworks.
+              </li>
+              <li>
+                Ability to work with diverse teams on demanding timelines to
+                build fully functional web applications from start to finish.
+              </li>
+              <li>
+                Certified to teach Computer Science (K-12) in Florida public
+                schools.
+              </li>
+              <li>
+                Looking for my first job doing or teaching coding so that I can
+                continue studies and pursue BS/MS in Computer Science.
+              </li>
+            </ul>
+            <h6>Education</h6>
+            <ul>
+              <li>
+                Graduate of University of Central Florida Coding Bootcamp
+                (2019).
+              </li>
+              <li>
+                Continuing Education and Improvement with personal projects and
+                <a href="http://www.codewithmosh.com"> codedewithmosh.com </a>.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a
+              type="button"
+              class="btn btn-secondary"
+              href="developerPage.html"
+            >
+              Read More
+            </a>
+            <a type="button" class="btn btn-secondary" href="portfolio.html">
+              Projects
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
@@ -153,6 +289,9 @@
             </ul>
           </div>
           <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="educatorPage.html">
+              Read More
+            </a>
             <button
               type="button"
               class="btn btn-secondary"
@@ -163,7 +302,149 @@
           </div>
         </div>
       </div>
-    
+    </div>
+
+    <!-- Musician Modal -->
+    <div
+      class="modal fade"
+      id="musicianModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="musicianModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="musicianModalLabel">Musician</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>Overview</h6>
+            <ul>
+              <li>
+                Choir Director.
+              </li>
+              <li>
+                Accompanist (Organ & Piano).
+              </li>
+              <li>
+                Extensive Background with Adult Volunteer Choirs.
+              </li>
+              <li>
+                Engaging Children’s Choir Director.
+              </li>
+              <li>
+                Vocal Coach.
+              </li>
+              <li>
+                Proficient Music Engraver (Finale).
+              </li>
+              <li>
+                Certified to teach Music (K-12) in Florida public schools.
+              </li>
+            </ul>
+            <h6>Education</h6>
+            <ul>
+              <li>
+                Master of Arts in Music with Concentration in Choral Conducting.
+              </li>
+              <li>
+                Bachelor of Arts with a major in Liturgical Music.
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="musicianPage.html">
+              Read More
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brian Modal -->
+    <div
+      class="modal fade"
+      id="brianModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="brianModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="brianModalLabel">Brian</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h6>My Foundational Values</h6>
+            <ul>
+              <li>Kindess.</li>
+              <li>Authenticity.</li>
+              <li>Mindfulness.</li>
+              <li>Connection.</li>
+              <li>Health.</li>
+              <li>Personal Growth & Improvement.</li>
+            </ul>
+            <h6>The Important Things</h6>
+            <ul>
+              <li>Optimism (balanced with pragmatism).</li>
+              <li>Solving Problems.</li>
+              <li>
+                Freedom (especially from societal expectations, including debt).
+              </li>
+              <li>Quiet time for introverting and recharging.</li>
+            </ul>
+            <h6>The Things That Make Life More Enjoyable</h6>
+            <ul>
+              <li>Exploring.</li>
+              <li>Interacting with Strangers.</li>
+              <li>Beauty.</li>
+              <li>Nature.</li>
+              <li>Theater.</li>
+              <li>Theme Parks.</li>
+              <li>Cleanliness.</li>
+              <li>Wonder and Awe.</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" href="brianPage.html">
+              Read More
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Jquery & bootstrap JavaScript -->
     <script
@@ -182,4 +463,5 @@
       crossorigin="anonymous"
     ></script>
   </body>
+
 </html>
